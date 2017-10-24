@@ -5,8 +5,9 @@ public class person {
 	 System.out.println("Hello");
  }
 	 public static void main(String[] args) {
-		 Person p = new Person();
-		 p
+		 person p = new person();
+		 p.sayhello();
+		 
 		}
  
 }
