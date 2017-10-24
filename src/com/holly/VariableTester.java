@@ -34,6 +34,18 @@ public class VariableTester {
     System.out.println(s.charAt(0));// --字串中第一個字
     //char 是字元的意思
     
+    int x = 5;
+    int y = 3;
+    int z = x%y;
+    System.out.println(z);
+    
+    System.out.println(x>>1);//因為5二進位表示法是0101 往右推1就是010 =2
+    x++;
+    x--;
+    System.out.println(x);
+    x = x + 2;
+    x += 2;// = (x = x + 2;
+    System.out.println(x);
     
 	}
 
