@@ -6,7 +6,7 @@ public class VariableTester {
 
 	public static void main(String[] args) {
     int  age = 0;
-    //age,weight,c,c2,i,pass,s,r,n1,n2,n3,n4¬OÅÜ¼Æ
+    //age,weight,c,c2,i,pass,s,r,n1,n2,n3,æ˜¯è®Šæ•¸
     float weight = 69.5f; 
     char c = 65;
     char c2 = 'Z';
@@ -19,7 +19,7 @@ public class VariableTester {
     System.out.println(pass);
     
     Random r = new Random();
-    // s r ¬Oreference data type(°Ñ·Ó¸ê®Æ«¬ºA)
+    //  s r æ˜¯reference data type(åƒç…§è³‡æ–™å‹æ…‹)
      int n1 = r.nextInt(6)+1;
      int n2 = r.nextInt(6)+1;
      int n3 = r.nextInt(6)+1;
@@ -28,24 +28,34 @@ public class VariableTester {
     System.out.println(r.nextInt(6)+1);
     
     String s= new String("Hello");
-    String s2 = "HAHAHAHA";//¥u¦³String(¦r¦ê)¯à³o¼Ë¬Ù²¤ new
+    String s2 = "HAHAHAHA";//åªæœ‰String(å­—ä¸²)èƒ½é€™æ¨£çœç•¥ new
     int len =s.length();
     System.out.println("len:"+ len);
-    System.out.println(s.charAt(0));// --¦r¦ê¤¤²Ä¤@­Ó¦r
-    //char ¬O¦r¤¸ªº·N«ä
+    System.out.println(s.charAt(0));//  --å­—ä¸²ä¸­ç¬¬ä¸€å€‹å­—
+    //char æ˜¯å­—å…ƒçš„æ„æ€
     
     int x = 5;
     int y = 3;
     int z = x%y;
     System.out.println(z);
     
-    System.out.println(x>>1);//¦]¬°5¤G¶i¦ìªí¥Üªk¬O0101 ©¹¥k±À1´N¬O010 =2
+    System.out.println(x>>1);//å› ç‚º5äºŒé€²ä½è¡¨ç¤ºæ³•æ˜¯0101 å¾€å³æ¨1å°±æ˜¯010 =2
     x++;
     x--;
     System.out.println(x);
     x = x + 2;
     x += 2;// = (x = x + 2;
     System.out.println(x);
+    //å­—ä¸²è½‰æ•´æ•¸
+    String data = "123";
+    int n = Integer.parseInt(data);
+    
+    //æ•´æ•¸è½‰å­—ä¸²
+    String mydata = String.valueOf(n);
+    
+    
+    
+  
     
 	}
 

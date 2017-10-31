@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class Hello {
 
 	public static void main(String[] args) {
-		System.out.println("½Ð¿é¤J±zªº¦W¦r:");
+		System.out.println("è«‹è¼¸å…¥æ‚¨çš„åå­—:");
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
 		System.out.println("Hello,"+ line);
 		
-		System.out.println("§A´X·³?");
+		System.out.println("ä½ å¹¾æ­²?");
 		line = scanner.nextLine();
-		int age = Integer.parseInt(line);//parse¥NªíÂà´«
+		int age = Integer.parseInt(line);//ä»£è¡¨è½‰æ›   parseæ˜¯è§£æž
 		System.out.println(age);
 		System.out.println(age>25);
 		
