@@ -14,14 +14,15 @@ public class Niner {
 	 */
 
 	public static void main(String[] args) {
-		int n = 2 ;
-		for(int i = 1; i <= 9 ; i++){
-			if((n*i) < 10){
-			System.out.println(n +" x "+ n + " =  " + (2*i));
-		}else{
-			System.out.println(n +" x "+ n + " = " + (2*i));
-		}//記得改
-	}
+		for(int n = 2 ; n <= 9 ; n++) {
+			for(int i = 1; i <= 9 ; i++){
+				if((n*i) < 10){
+					System.out.println(n +" x "+ i + " =  " + (n*i));
+				}else{
+					System.out.println(n +" x "+ i + " = " + (n*i));
+				}
+			}System.out.println();
+		}
 		/*for(int i = 1; i <= 9 ; i++){
 			if((2*i) < 10){
 			System.out.println("2 x "+ i + " =  " + (2*i));
