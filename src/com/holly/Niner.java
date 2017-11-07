@@ -3,6 +3,7 @@ package com.holly;
 public class Niner {
 	/*九九乘法表*/
 	public static void main(String[] args) {
+		
 		for(int n = 2 ; n <= 9 ; n++) {
 			for(int i = 1; i <= 9 ; i++){
 				if((n*i) < 10){
@@ -10,7 +11,8 @@ public class Niner {
 				}else{
 					System.out.println(n +" x "+ i + " = " + (n*i));
 				}
-			}System.out.println();
+			}
+			System.out.println();//跳行//
 		}
 		/*
 	 	2 x 1 =  2
