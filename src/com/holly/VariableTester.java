@@ -10,7 +10,7 @@ public class VariableTester {
     float weight = 69.5f; 
     char c = 65;
     char c2 = 'Z';
-   //
+   
     int i = c2;
     System.out.println(i);
     //System.out.println((int)c2);
@@ -18,7 +18,7 @@ public class VariableTester {
     System.out.println(!pass);
     System.out.println(pass);
     
-    Random r = new Random();
+    Random r = new Random();//擲骰子
     //  s r 是reference data type(參照資料型態)
      int n1 = r.nextInt(6)+1;
      int n2 = r.nextInt(6)+1;
@@ -33,10 +33,10 @@ public class VariableTester {
     System.out.println("len:"+ len);
     System.out.println(s.charAt(0));//  --字串中第一個字
     //char 是字元的意思
-    
+    float f= 5.0f;
     int x = 5;
     int y = 3;
-    int z = x%y;
+    float z=(f/y);
     System.out.println(z);
     
     System.out.println(x>>1);//因為5二進位表示法是0101 往右推1就是010 =2
@@ -51,7 +51,7 @@ public class VariableTester {
     int n = Integer.parseInt(data);
     
     //整數轉字串
-    String mydata = String.valueOf(n);
+    String mydata = String.valueOf(n); 
     
     
     
