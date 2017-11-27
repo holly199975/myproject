@@ -1,9 +1,14 @@
 package com.holly;
 
+import java.util.Scanner;
+
 public class ScoreTester {
 
 	public static void main(String[] args) {
-		int score = 92;
+		System.out.println("Please enter a score:");
+		Scanner scanner = new Scanner(System.in);
+		String line = scanner.nextLine();
+		int score = Integer.parseInt(line);
 		int level = score/10;
 			switch(level){
 			case 0:

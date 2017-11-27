@@ -13,11 +13,11 @@ public class Numbers {
 			while(i<=n){
 				i=i+1;
 				
-				/*if(i%3==0){
-					System.out.print("*");
-				}*/
+				if(i%3==0){
+					System.out.print(i+"*"+" ");
+				}else
 				System.out.print(i+" ");
-				if(i>10){
+				if(i>=10){
 					break;
 				}
 			}
