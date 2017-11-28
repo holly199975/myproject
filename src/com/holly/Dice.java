@@ -5,7 +5,7 @@ public class Dice {
 
 	public static void main(String[] args) {
 		int n[] = {4,5,6,7,8};
-		for(int u :  n ){
+		for(int u :  n ){ // : 叫 for each  
 		System.out.println(u);
 		}
 		
