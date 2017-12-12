@@ -6,7 +6,11 @@ public class GameTester {
 
 	public static void main(String[] args) {
 		int n = -1;//n不管=多少都沒差
-		while(n != 0){
+		int pos =0;
+		int hp = 100;
+		int row =3;
+		int col =5;
+		while(hp > 0){
 			System.out.println("請輸入方向:");
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
@@ -14,24 +18,46 @@ public class GameTester {
 		
 			switch(n){
 			case 2:
-				System.out.println("向下");
+				if(pos/col < row - 1){
+					pos = pos + col;
+					hp = hp -5;
+				}else{
+					hp =hp -30;
+				}
+				System.out.println(hp);
 				break;
 			case 4:
-				System.out.println("向左");
+				if(pos % col != 0){
+					pos = pos - 1;
+					hp = hp -5;
+				}else{
+					hp = hp -30;
+				}
+				System.out.println(hp);
 				break;
 			case 6:
-				System.out.println("向右");
+				if(pos % col == 0){
+					pos = pos +1;
+					hp = hp -5; 
+				}else{
+					hp =hp -30;
+				}
+				System.out.println(hp);
 				break;
 			case 8:
-				System.out.println("向上");
-				break;
-			case 0:
-				System.out.println("bye");
+				if (pos/col > 0){
+					pos = pos - col;
+					hp = hp -5;
+				}else{
+					hp =hp -30;
+				}
+				System.out.println(hp);
 				break;
 			
-			}
+			
 		}
 		
 		
 }
-}	
+	}
+}
