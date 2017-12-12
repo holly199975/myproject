@@ -36,7 +36,7 @@ public class GameTester {
 				System.out.println(hp);
 				break;
 			case 6:
-				if(pos % col == 0){
+				if(pos % col != col -1){
 					pos = pos +1;
 					hp = hp -5; 
 				}else{
