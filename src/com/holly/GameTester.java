@@ -24,7 +24,8 @@ public class GameTester {
 				}else{
 					hp =hp -30;
 				}
-				System.out.println(hp);
+				System.out.println("hp"+":"+hp);
+				System.out.println("pos"+":"+pos);
 				break;
 			case 4:
 				if(pos % col != 0){
@@ -33,7 +34,8 @@ public class GameTester {
 				}else{
 					hp = hp -30;
 				}
-				System.out.println(hp);
+				System.out.println("hp"+":"+hp);
+				System.out.println("pos"+":"+pos);
 				break;
 			case 6:
 				if(pos % col != col -1){
@@ -42,7 +44,8 @@ public class GameTester {
 				}else{
 					hp =hp -30;
 				}
-				System.out.println(hp);
+				System.out.println("hp"+":"+hp);
+				System.out.println("pos"+":"+pos);
 				break;
 			case 8:
 				if (pos/col > 0){
@@ -51,7 +54,8 @@ public class GameTester {
 				}else{
 					hp =hp -30;
 				}
-				System.out.println(hp);
+				System.out.println("hp"+":"+hp);
+				System.out.println("pos"+":"+pos);
 				break;
 			
 			
@@ -59,5 +63,8 @@ public class GameTester {
 		
 		
 }
+			if(hp<=0) {
+				System.out.println("Bye!");
+			}
 	}
 }
