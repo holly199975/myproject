@@ -1,5 +1,5 @@
 package com.ibm;
-
+//印出”省略九九乘法表”的程式，類別為 com.ibm.NineLazy類別執行後印出以下結果： (10分)請注意，”…”一定要印出來
 public class NineLazy {
 
 	public static void main(String[] args) {
