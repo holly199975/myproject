@@ -11,6 +11,9 @@ public class Tester {
 		stu.print();
 		int avg = stu.getAverage();
 		System.out.println(stu.name+":"+ avg);
+		
+		GraduateStudent gstu = new GraduateStudent();
+		gstu.print();
 	}
 
 }

@@ -6,6 +6,14 @@ public class Student {
 	int chinese;
 	String name;//english,math,chinese,name是instance variable
 	static int pass = 60;//加了 static就變成class變數
+	
+	
+	public Student(){ 
+		//有了空的建構子後GraduateStudent類別就不會出錯
+		
+	}
+	
+	
 	public Student(String name ,int english,int math, int chinese){
 		this.name =name;//括號裡的都是local variable
 		this.english = english;
