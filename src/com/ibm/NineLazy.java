@@ -7,6 +7,7 @@ public class NineLazy {
 			
 			for(int n = 2; n <= 9; n++){
 				if(i>3 && i<9){
+				
 					System.out.print( "   "+ ". . ." + "\t ");
 				}else
 				System.out.print(n +" * "+ i + " = " + (n*i) + " \t  ");
