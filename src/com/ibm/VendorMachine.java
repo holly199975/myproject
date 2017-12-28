@@ -26,24 +26,48 @@ public class VendorMachine {
 			System.out.println("目前餘額:"+m);
 			break;
 		case "a" :
-			 if( (m -15)>=0) {
+			m = m -15;
+			/* if( (m -15)>=0) {
 			System.out.println("DON!");	 
 			System.out.println("目前餘額:"+(m-15));
 			 }else
-				 System.out.println("BEEP!"+"目前餘額:"+m);
+				 if(m <= 0) {
+					 m = 0;
+					 System.out.println("BEEP!"+"目前餘額:"+ m);
+				 }else
+				 System.out.println("BEEP!"+"目前餘額:"+m);*/
+			if( (m -15)<=0) {
+				System.out.println("BEEP!"+"目前餘額:"+m);
+				 }else
+					 System.out.println("DON!");	 
+					System.out.println("目前餘額:"+(m-15));
+					/*if(m <= 0) {
+						 m = 0;
+						 System.out.println("BEEP!"+"目前餘額:"+ m);
+					}*/
 			 break;
 		case "b" :
+			m = m -20;
 			if( (m -20)>=0) {
 				System.out.println("DON!");	 
 				System.out.println("目前餘額:"+(m-20));
 				 }else
+					 if(m <= 0) {
+						 m = 0;
+						 System.out.println("BEEP!"+"目前餘額:"+ 0);
+					 }else
 					 System.out.println("BEEP!"+"目前餘額:"+m);
 				 break;
 		case "c" :
+			m = m -30;
 			if( (m -30)>=0) {
 				System.out.println("DON!");	 
 				System.out.println("目前餘額:"+(m-30));
 				 }else
+					 if(m <= 0) {
+						 m = 0;
+						 System.out.println("BEEP!"+"目前餘額:"+ 0);
+					 }else
 					 System.out.println("BEEP!"+"目前餘額:"+m);
 				 break;
 		case "0" :
