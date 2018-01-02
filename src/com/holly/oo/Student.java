@@ -2,7 +2,11 @@ package com.holly.oo;
 
 public class Student {
 	int english; //類別裡的第一層叫屬性
-	int math;    //可稱為property或field
+	//public 表示都能用
+	//private 表示只能在此類別用
+	//沒有寫      表示只能在此package用
+	//protected 表示只能給子類別和同package用
+	protected int math;    //可稱為property或field
 	int chinese;
 	String name;//english,math,chinese,name是instance variable
 	static int pass = 60;//加了 static就變成class變數
@@ -30,7 +34,7 @@ public class Student {
 				math+"\t"+chinese+"\t");
 	}
 	
-	public int getAverage(){
+	 int getAverage(){
 		return (english+math+chinese)/3;
 	}
 }
