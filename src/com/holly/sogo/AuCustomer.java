@@ -6,13 +6,11 @@ public class AuCustomer extends Customer {
 		super.discount = 0.1f; 
 		
 	}
-	int bonus =(int) (amount*0.1);
+	@Override
 	public void print(){
-		System.out.println(amount +"\t" +(int)(amount*(1-discount))+ "\t" + bonus);
+		int bonus =(int) (amount*0.1);
+		int total = (int)(amount*(1-discount));
+		System.out.println("消費金額:"+amount +"\t" +"折扣後總額:" +total+ "\t" +"紅利:" +bonus);
 	}
-	/*public int bonus =(int) (amount*0.1);
-	public void AuCustomer() {
-		//public int bonus =(int) (amount*0.1);
-		System.out.println(bonus);
-	}*/
+	
 }
