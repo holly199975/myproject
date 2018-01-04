@@ -8,7 +8,7 @@ public class Customer {
 	}
 	
 	public void print(){
-		System.out.println(amount +" " +(int)(amount*(1-discount)));
+		System.out.println(amount +"\t" +(int)(amount*(1-discount)));
 	}
 	
 	public Customer(){

@@ -7,8 +7,8 @@ public class Tester {
 		c1.print();
 		AgCustomer c2 = new AgCustomer(1000);
 		c2.print();
-		//AuCustomer c3 = new AuCustomer(1000);
-		//c3.print();
+		AuCustomer c3 = new AuCustomer(1000);
+		c3.print();
 	}
 
 }
