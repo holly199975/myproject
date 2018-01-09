@@ -47,6 +47,7 @@ public class Tester {
 		
 		System.out.println(list2.get(0));
 		System.out.println(list2.size());
+		list2.remove(2);//摘除
 		for(int i=0;i<list2.size();i++){
 			System.out.println(list2.get(i));
 		}
