@@ -9,11 +9,10 @@ public class Pocker {
 	
 	Random r = new Random();
 	for(int a=1;a<10;a++) {
-	int i = r.nextInt(10);
+	int i = r.nextInt(10);//隨機挑一個數
 	int tmp =  n[a];
 	n[a] = n[i];
 	n[i] = tmp;
-	//System.out.print();
 	}
 	for(int u : n) {
 		System.out.print(u+"\t");
