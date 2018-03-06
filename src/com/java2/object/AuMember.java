@@ -13,8 +13,8 @@ public class AuMember extends Member {
 
 	public void print(){
 		int bonus = 1000;
-		 int total = (int)(amount*discount);
-		System.out.println("當月消費金額:"+amount +"\t" +"折價券" +total + bonus);
+		 int total = (int)(amount*discount) + bonus;
+		System.out.println("當月消費金額:"+amount +"\t" +"折價券:" +total );
 	}
 
 }
