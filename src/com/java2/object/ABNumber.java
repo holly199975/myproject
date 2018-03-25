@@ -13,7 +13,7 @@ public class ABNumber {
 		for (int i = 0; i < number.length(); i++) {
 			char c = number.charAt(i);
 			for (int j = 0; j < length; j++) {
-				if (c == number.charAt(j)) {
+				if (c == secret.charAt(j)) {
 					if (i == j) {
 						result = result + 10;
 					} else {
