@@ -13,7 +13,7 @@ public class ABGame {
 		while (A != 4) {
 			A=0;
 			B=0;
-			System.out.print("Please enter a number:");
+			System.out.print("Please enter your guess:");
 			String nums = scanner.nextLine();
 			int length = secret.length();
 			for (int i = 0; i < nums.length(); i++) {

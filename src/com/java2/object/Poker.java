@@ -9,7 +9,7 @@ public class Poker {
 	public Poker(){
 		for(int i=0; i<cards.length; i++) {
 			cards[i] = i;
-			System.out.print((i%13) + 1 + " " + (flowers.charAt(i/13)));
+			System.out.print((i%13) + 1 +" "+ (flowers.charAt(i/13)));
 		}
 	}
 	
