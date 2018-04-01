@@ -23,7 +23,7 @@ public class Poker2 {
 	public void print() {
 		for(int i=0; i<52; i++) {
 			int c = cards.get(i);
-			System.out.print((c%13) + 1 + " " + (flowers.charAt(c/13)));
+			System.out.print((c%13) + 1 +" " + (flowers.charAt(c/13))+ "  ");
 			if(i%13==0) {
 				System.out.println(" ");
 			}
