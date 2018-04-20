@@ -1,9 +1,19 @@
 package com.holly.io;
 
+import java.awt.List;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import com.holly.sogo.AgCustomer;
+import com.holly.sogo.AuCustomer;
+import com.holly.sogo.Customer;
 
 public class Sogo {
 	
@@ -21,6 +31,48 @@ public class Sogo {
 		switch(function){
 		case 1 :
 			inputSales();
+			break;
+		case 2 :
+			ArrayList<Sales> list = new ArrayList<>();
+			
+			FileInputStream fis;
+			try {
+				fis = new FileInputStream("sales.txt");
+				InputStreamReader isr = new InputStreamReader(fis);
+				BufferedReader in = new BufferedReader(isr);
+				String line = in.readLine();
+				while(line != null){
+					String[] token = line.split("\t");//spilt代表分割()裡的是要用甚麼分割
+					int type = Integer.parseInt(token[0]);
+					int amount = Integer.parseInt(token[1]);
+					Sales sales = new Sales(type,amount);
+					list.add(sales);
+					
+					line = in.readLine();
+				}
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//report
+			for(Sales sales:list) {// : for each
+				Customer c = null;
+				switch(sales.type) {
+				case 1 :
+					c = new Customer(sales.getAmount());
+					break;
+				case 2 :
+					c = new AgCustomer(sales.getAmount());
+					break;
+				case 3 :
+					c = new AuCustomer(sales.getAmount());
+					break;
+				}
+				c.print();
+			}
 			break;
 		case 3 :
 			return;
