@@ -42,12 +42,17 @@ public class Sogo {
 				BufferedReader in = new BufferedReader(isr);
 				String line = in.readLine();
 				while(line != null){
+				
+				try {	
 					String[] token = line.split("\t");//spilt代表分割()裡的是要用甚麼分割
 					int type = Integer.parseInt(token[0]);
 					int amount = Integer.parseInt(token[1]);
 					Sales sales = new Sales(type,amount);
 					list.add(sales);
-					
+				}catch(NumberFormatException e) {
+					System.out.println("資料格式錯誤");
+					return;
+				}	
 					line = in.readLine();
 				}
 			} catch (FileNotFoundException e) {
