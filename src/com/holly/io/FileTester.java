@@ -7,17 +7,21 @@ import java.io.IOException;
 public class FileTester {
 
 	public static void main(String[] args) {
-		try { 
-			FileOutputStream out = new FileOutputStream("data.txt");
-			out.write(65);
-			out.flush(); //沖掉
-			out.close();
-		} catch (FileNotFoundException e) {
-			System.out.println("File Not FOUND!");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+			try {
+				writeTest();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+		
 	}
-
+	public static void writeTest() throws IOException{ //FileNotFoundExeption是IOException的子類別
+		FileOutputStream out = new FileOutputStream("data.txt");
+		out.write(65);
+		out.flush(); //沖掉
+		out.close();
+	}
+	//如果是小錯誤可以在writeTest自己解決，大錯誤再呼叫main
 }
