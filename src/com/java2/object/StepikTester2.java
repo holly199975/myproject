@@ -39,6 +39,12 @@ public class StepikTester2 {
 	              ", position=" + position +
 	              '}';
 	    }
+	    
+	    
+	    
+	    List<Integer> numList = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7));
+	    numList.subList(0,2).clear();
+	    
 	  }
 
 }
