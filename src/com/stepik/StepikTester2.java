@@ -1,4 +1,4 @@
-package com.java2.object;
+package com.stepik;
 
 import java.util.ArrayList;
 import java.util.Arrays;
