@@ -1,7 +1,9 @@
 package com.holly.java2.threading;
 
-public class HorseRunnable implements Runnable{
-
+public class HorseRunnable implements Runnable{ //implements 實作
+	/*若我們設計的類別已經繼承了某類別時，因 Java 語言單一繼承的限制性，而無法繼承
+	Thread 類別時，則可以利用 java.lang.Runnable 這個介面達到多執行緒
+	的目的*/
 	@Override
 	public void run() {
 		for(int i=0; i<=100; i++){
