@@ -11,6 +11,7 @@ public class VendingMain {
 		BufferedReader in = new BufferedReader(fr);
 		String line = in.readLine();
 		String[] tokens = line.split(",");
+		int count = Integer.parseInt(tokens[0]);
 		
 		
 		vm.drinks.add(new Drink(id, name, price));
