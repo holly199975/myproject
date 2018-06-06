@@ -6,4 +6,7 @@ import java.util.List;
 public class VendingMachine {
 	List<Drink> drinks = new ArrayList<>();
 	
+	public void start() {
+		
+	}
 }
