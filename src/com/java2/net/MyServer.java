@@ -9,7 +9,7 @@ public class MyServer {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			ServerSocket server = new ServerSocket(9958);//開cmd打telnet localhost 9958
+			ServerSocket server = new ServerSocket(9100);//開cmd打telnet localhost 9958
 			Socket socket = server.accept();//開始聽
 			System.out.println("connected");
 			
