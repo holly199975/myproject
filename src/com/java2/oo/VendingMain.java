@@ -18,7 +18,7 @@ public class VendingMain {
 			int count = Integer.parseInt(tokens[0]);
 			for(int i=0;  i<count; i++) {
 				String name = tokens[i*2+1];
-				int price = i*2+2;
+				int price = Integer.parseInt(tokens[i*2+2]);
 				vm.drinks.add(new Drink(i+1, name, price));
 			}
 			vm.start();
