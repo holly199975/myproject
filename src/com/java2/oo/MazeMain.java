@@ -1,5 +1,9 @@
 package com.java2.oo;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class MazeMain {
 	/*有一遊戲場地，長寬由執行當時決定，場地中亂數產生陷阱，陷阱樹也由當時才決定
 	 * 
@@ -25,10 +29,11 @@ public class MazeMain {
 			class Player{
 				int hp=100;
 				int pos = 0;
+				
+				
 			}
 		}
 		
-		
-	}
 
+}
 }

@@ -22,26 +22,44 @@ public class VendingMachine {
 		 switch (data) {
 		 case "a" :
 			 m = m +5;
+			if(m<0){
+				System.out.println("餘額不足");
+			}else
 			System.out.println("目前餘額:"+m);
 			break;
 		case "b" :
 			 m = m +10;
+			 if(m<0){
+					System.out.println("餘額不足");
+				}else
 			System.out.println("目前餘額:"+m);
 			break;
 		case "c" :
 			 m = m +50;
+			 if(m<0){
+					System.out.println("餘額不足");
+				}else
 			System.out.println("目前餘額:"+m);
 			break;
 		case "1" :
 			 m = m -25;
+			 if(m<0){
+					System.out.println("餘額不足");
+				}else
 			System.out.println("目前餘額:"+m);
 			break;
 		case "2" :
 			 m = m -30;
+			 if(m<0){
+					System.out.println("餘額不足");
+				}else
 			System.out.println("目前餘額:"+m);
 			break;
 		case "3" :
 			 m = m -20;
+			 if(m<0){
+					System.out.println("餘額不足");
+				}else
 			System.out.println("目前餘額:"+m);
 			break;
 		case "0":

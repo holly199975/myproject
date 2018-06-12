@@ -12,10 +12,15 @@ public class Bingo {
 	 * 22 15 23 19 7
 	 * 2  20 18 3  14
 	 * 17 9  12 24 16
-	 * */
+	 * 
+	 * 
+	 * tip
+	 * 產生陣列
+	 * 0代表沒中 1代表中
+	 * 一列總合加起來=5 代表bingo一條*/
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		int bingo [][] = new int [5][5];
 	}
 
 }
