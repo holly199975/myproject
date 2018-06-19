@@ -1,0 +1,5 @@
+ git branch chat ->新增分支chat
+ git checkout chat ->切換到chat
+ git merge chat ->把chat合併到master
+ 之後會跳出一個視窗   ->儲存離開 :wq
+ 
