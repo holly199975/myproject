@@ -7,6 +7,10 @@ public class Course {
 	int hour;
 	int duration;
 	
+	public void isAvailable() {
+		
+	}
+	
 	public Course(String id,String name,int weekDay,int hour,int duration){
 		this.id = id;
 		this.name = name;
@@ -45,4 +49,6 @@ public class Course {
 	public int getDuration() {
 		return duration;
 	}
+	
+	
 }

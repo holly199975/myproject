@@ -24,11 +24,10 @@ public class Main {
 		readCourses();
 		
 		Scanner scanner = new Scanner(System.in);
-		int weekDay = scanner.nextInt();
 		System.out.println("請輸入星期(1-7):");
-		int hour = scanner.nextInt();
+		int weekDay = scanner.nextInt();
 		System.out.println("請輸入時(0-24):");
-		
+		int hour = scanner.nextInt();
 		
 	}
 	
@@ -53,7 +52,7 @@ public class Main {
 		}
 	}
 	public static void main(String[] args) {
-		
+		new Main();
 	}
 
 }
