@@ -26,7 +26,7 @@ public class MazeMain {
 			int col = Integer.parseInt(tokens[0]);
 			int row = Integer.parseInt(tokens[1]);
 			line = in.readLine();
-			int trapCount = Integer.parseInt(tokens[1]);
+			int trapCount = Integer.parseInt(line);
 			Maze m = new Maze(col, row, trapCount);
 			 System.out.println(col+","+row+","+ trapCount);
 			
