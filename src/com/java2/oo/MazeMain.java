@@ -26,13 +26,13 @@ public class MazeMain {
 			int col = Integer.parseInt(tokens[0]);
 			int row = Integer.parseInt(tokens[1]);
 			line = in.readLine();
-			int trapCount = Integer.parseInt(tokens[0]);
+			int trapCount = Integer.parseInt(tokens[1]);
 			Maze m = new Maze(col, row, trapCount);
-			
+			 System.out.println(col+","+row+","+ trapCount);
 			
 			
 			int n = -1;
-			while(m.player.hp > 0){
+			while(m.hp > 0){
 				System.out.println("請輸入方向:");
 			Scanner scanner = new Scanner(System.in);
 			String line1 = scanner.nextLine();
@@ -40,44 +40,44 @@ public class MazeMain {
 			
 				switch(n){
 				case 2:
-					if(m.player.pos/col < row - 1){
-						m.player.pos = m.player.pos + col;
-						m.player.hp = m.player.hp -1;
+					if(m.pos/col < row - 1){
+						m.pos = m.pos + col;
+						m.hp = m.hp -1;
 					}else{
-						m.player.hp =m.player.hp -5;
+						m.hp =m.hp -5;
 					}
-					System.out.println("hp"+":"+m.player.hp);
-					System.out.println("pos"+":"+m.player.pos);
+					System.out.println("hp"+":"+m.hp);
+					System.out.println("pos"+":"+m.pos);
 					break;
 				case 4:
-					if(m.player.pos % col != 0){
-						m.player.pos = m.player.pos - 1;
-						m.player.hp = m.player.hp -1;
+					if(m.pos % col != 0){
+						m.pos = m.pos - 1;
+						m.hp = m.hp -1;
 					}else{
-						m.player.hp = m.player.hp -5;
+						m.hp = m.hp -5;
 					}
-					System.out.println("hp"+":"+m.player.hp);
-					System.out.println("pos"+":"+m.player.pos);
+					System.out.println("hp"+":"+m.hp);
+					System.out.println("pos"+":"+m.pos);
 					break;
 				case 6:
-					if(m.player.pos % col != col -1){
-						m.player.pos = m.player.pos +1;
-						m.player.hp = m.player.hp -1; 
+					if(m.pos % col != col -1){
+						m.pos = m.pos +1;
+						m.hp = m.hp -1; 
 					}else{
-						m.player.hp =m.player.hp -5;
+						m.hp =m.hp -5;
 					}
-					System.out.println("hp"+":"+m.player.hp);
-					System.out.println("pos"+":"+m.player.pos);
+					System.out.println("hp"+":"+m.hp);
+					System.out.println("pos"+":"+m.pos);
 					break;
 				case 8:
-					if (m.player.pos/col > 0){
-						m.player.pos = m.player.pos - col;
-						m.player.hp = m.player.hp -1;
+					if (m.pos/col > 0){
+						m.pos = m.pos - col;
+						m.hp = m.hp -1;
 					}else{
-						m.player.hp =m.player.hp -5;
+						m.hp =m.hp -5;
 					}
-					System.out.println("hp"+":"+m.player.hp);
-					System.out.println("pos"+":"+m.player.pos);
+					System.out.println("hp"+":"+m.hp);
+					System.out.println("pos"+":"+m.pos);
 					break;
 				
 				

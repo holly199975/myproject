@@ -4,8 +4,10 @@ package com.java2.oo;
 public class Maze {
 	
 		int col,row,trapCount;
-		int[] trap;
-		Player player;
+		//int[] trap;
+		//Player player;
+		int hp=100;
+		int pos = 0;
 		
 		public Maze(int col,int row,int trapCount){
 			this.col = col;
@@ -30,7 +32,7 @@ public class Maze {
 		public int getTrapCount() {
 			return trapCount; 
 		}
-		public void setTrap(int[] trap) {
+		/*public void setTrap(int[] trap) {
 			this.trap = trap;
 		}
 		public void setPlayer(Player player) {
@@ -40,10 +42,9 @@ public class Maze {
 			return player;
 		}
 		class Player{
-			int hp=100;
-			int pos = 0;
 			
 			
-		}
+			
+		}*/
 	
 }
